@@ -9,11 +9,11 @@ const Sidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between w-screen">
-      <div className="relative top-0">
+    <div className="flex justify-between w-screen">
+      <div className="relative top-10 px-20">
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
-          className="text-white p-2 hover:opacity-80 transition-opacity absolute top-0"
+          className="text-white p-2 hover:opacity-80 transition-opacity "
         >
           <GiHamburgerMenu size={60} />
         </button>
@@ -54,13 +54,8 @@ const Sidebar = () => {
         )}
       </div>
 
-      <div className="flex-shrink-0 mr-4 flex flex-col items-center">
-        <img 
-          src={dhsLogo} 
-          alt="dhsLogo" 
-          className="h-50 w-auto object-contain max-w-[250px] mb-4" 
-        />
-        <div className="flex flex-col items-center space-x-4">
+      <div className="flex-shrink-0 mr-4 flex items-center">
+        <div className="flex items-center space-x-4">
           <a 
             href="https://www.instagram.com/dallashoopscene/?hl=en"
             className="hover:opacity-80 transition-opacity"
@@ -82,6 +77,11 @@ const Sidebar = () => {
             />
           </a>
         </div>
+        <img 
+          src={dhsLogo} 
+          alt="dhsLogo" 
+          className="h-50 w-auto object-contain max-w-[250px] mb-4" 
+        />
       </div>
     </div>
   );
