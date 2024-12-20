@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar';
-function Contacts(){
+function OurTeam(){
     return(
         <div classname ="relative w-full h-screen">
             <div className="absolute top-0 left-0 right-0 z-20">
@@ -10,4 +10,4 @@ function Contacts(){
     );
 }
 
-export default Contacts; 
+export default OurTeam; 

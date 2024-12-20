@@ -1,21 +1,21 @@
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
-import DefaultDashboard from './components/DefaultDashboard'; 
-import DefaultFooter from './components/DefaultFooter'
 import HomePage from './pages/HomePage';
-import BookingPage from './pages/BookingPage';
+import BookUs from './pages/BookUs';
 import NotFoundPage from './pages/NotFoundPage';
-import AboutUs from './pages/AboutUs'; 
+import OurTeam from './pages/OurTeam'; 
 import Contacts from './pages/Contacts';
+import Login from './pages/Login'
 function App() {
   return (
     <div>
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/booking" element={<BookingPage />} />
-          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/bookus" element={<BookUs/>} />
+          <Route path="/ourteam" element={<OurTeam />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
